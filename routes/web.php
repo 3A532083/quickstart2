@@ -10,6 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// 認證路由...
+Route::get('/home', function () {
+    return view('home');
+});
+
+Route::auth();
 
 Route::get('/', function () {
     return view('welcome');
